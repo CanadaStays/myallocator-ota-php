@@ -15,7 +15,7 @@ return array(
      * channel manager <-> OTA authentication. The shared secret is defined
      * by MyAllocator and shared with OTA.
      */
-    'shared_secret' => 'test',
+    'shared_secret' => env('MY_ALLOCATOR_SECRET'),
 
     /*
      * Enable/Disable debug logs.
