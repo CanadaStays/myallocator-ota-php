@@ -11,7 +11,6 @@
 
 namespace MyAllocator\phpsdkota\src\Object;
 use MyAllocator\phpsdkota\src\Api\Inbound\MaInboundInterface;
-use MyAllocator\phpsdkota\src\Object\MaError;
 
 class MaResponse
 {
