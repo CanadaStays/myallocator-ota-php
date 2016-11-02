@@ -46,6 +46,9 @@ class MaRouter
         // Load API's
         $this->apis = require(dirname(__FILE__) . '/../../Config/MaApisInbound.php');
 
+        // Load Errors
+        require(dirname(__FILE__) . '/../../Config/MaErrorTypes.php');
+
         // Set inbound interface
         $this->ota_intf = $interface;
     }
