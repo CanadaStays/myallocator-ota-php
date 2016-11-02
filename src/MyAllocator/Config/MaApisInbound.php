@@ -65,7 +65,8 @@ return array(
                 'ota_property_id',
             ),
             'opt' => array(
-                'guid'
+                'guid',
+                'ota_booking_version',
             )
         )
     ),
@@ -75,6 +76,7 @@ return array(
                 'verb',
                 'mya_property_id',
                 'ota_property_id',
+                'currency',
                 'Inventory'
             ),
             'opt' => array(
