@@ -24,7 +24,7 @@ return array(
                 'verb',
                 'mya_property_id',
                 'ota_property_id',
-                'ota_regcode'
+                'ota_property_password',
             ),
             'opt' => array(
                 'guid'
