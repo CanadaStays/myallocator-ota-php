@@ -118,10 +118,13 @@ class MaRouter
             }
         }
 
-        // MA:OTA property validation
-        $rsp = $this->ota_intf->authenticateProperty($request);
-        if (!$rsp->success) {
-            return $rsp->response();
+        if ($request['verb'] !== 'CreateProperty') {
+            // MA:OTA property validation
+            $rsp = $this->ota_intf->authenticateProperty($request);
+
+            if (!$rsp->success) {
+                return $rsp->response();
+            }
         }
 
         // Invoke method
@@ -143,6 +146,9 @@ class MaRouter
                 break;
             case 'ARIUpdate':
                 $rsp = $this->ota_intf->ARIUpdate($request);
+                break;
+            case 'CreateProperty':
+                $rsp = $this->ota_intf->createProperty($request);
                 break;
             default: 
                 $rsp->error(MA_OTA_ERR_VERB_INVALID);

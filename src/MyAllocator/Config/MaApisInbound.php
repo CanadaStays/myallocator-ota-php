@@ -83,5 +83,18 @@ return array(
                 'guid'
             )
         )
-    )
+    ),
+    'CreateProperty' => array(
+        'args' => array(
+            'req' => array(
+                'verb',
+                'mya_property_id',
+                'ota_cid',
+                'Property',
+            ),
+            'opt' => array(
+                'guid',
+            ),
+        ),
+    ),
 );
